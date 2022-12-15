@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: grey;
+  color: white;
+  margin: 0 0 30px 0;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  margin: 20px;
+}
+
+#box1 {
+  background-color: red;
+}
+
+#box2 {
+  background-color: yellow;
+}
+
+#box3 {
+  background-color: green;
+}
+
+#box4 {
+  background-color: blue;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  /* This property is given to the children/flex-item and it stretches the whole page, you can decide to give it same flex-grow(width) or you can decide to give them seperate flex-grow */
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  /* Tells the direction of your flex items, by default it is row(goes from left to right) based.  */
+  /* Changing this to column moves the direction of your elements from top to bottom */
+  /* flex-direction: column; */
+  /* This property only works with flex-direction of ROW */
+  /* justify-content: space-between; */
+  /* This property only works with flex-direction of COLUMN */
+  /* align-items: center; */
+
+  /* Breaks the flex items to the next line as you decrease the width of your screen */
+  /* Can be used to convert your view from laptop view to mobil view */
+  /* flex-wrap: wrap; */
+}
